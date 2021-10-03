@@ -57,6 +57,36 @@ body {
 }
 
 .bloco__link a:hover {
-    background-color: #ccc;
+    background-color: rgb(74, 218, 93);
     color: #fff;
+}
+
+@media (max-width: 768px){
+    .bloco {
+        width: calc(100%/2 - 20px);
+    }
+    .bloco__img {
+        height: calc((100vw /2 - 20px) /2);
+    }
+}
+
+
+@media (max-width: 425px){
+    .block {
+        width: calc(100% - 20px);
+    }
+    .bloco__img {
+        height: calc((100vw - 20px) /2);
+    }
+}
+
+
+@media (max-width: 320px){
+    .bloco {
+        width: calc(100%);
+        margin: 10px 0;
+    }
+    .bloco__img {
+        height: calc(100vw /2);
+    }
 }
